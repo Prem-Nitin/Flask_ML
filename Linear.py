@@ -2,7 +2,6 @@ import numpy as np
 from pandas.core.frame import DataFrame
 from sklearn.linear_model import LinearRegression
 import pandas as pd 
-import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
 
 def predict(X, dat):
