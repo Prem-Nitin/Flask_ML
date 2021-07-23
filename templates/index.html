@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block content %} 
+
+<title>Linear Regression</title>
+<link rel = "stylesheet" href = "{{ url_for('static', filename = 'css/base.css') }}">
+
+{% endblock %}
+
+{%block body%}
+
+
+<h1 class = 'heading'> Prediction</h1>
+        
+        <form class = 'Form' action = '#' method = 'POST' enctype="multipart/form-data">
+            
+
+            <div class="button-wrap">
+                <input type = 'text' name = 'X'>
+                
+                <span class = "filewrap">
+                <input class = 'choose' type="file" name ='Files' >
+                </span>
+              <div>
+            <button class = 'button'> Predict</button>
+
+
+
+{%endblock%}

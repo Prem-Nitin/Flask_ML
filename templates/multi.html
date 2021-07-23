@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{%block content%}Multiple Regression{%endblock%}
+
+{%block body%}
+<form class = 'Form' action = '#' method = 'POST' enctype="multipart/form-data">
+            
+
+            <div class="button-wrap">
+                
+                <span class = "filewrap">
+                <input class = 'choose' type="file" name ='Files' >
+                </span>
+                <br>
+                <input type = 'text' name = 'x1'><br>
+                <input type = 'text' name = 'x2'><br>
+                <input type = 'text' name = 'x3'><br>
+
+              <div>
+            <button class = 'button'> Predict</button>
+{%endblock%}
