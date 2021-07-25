@@ -32,10 +32,10 @@ def predict():
 
         C = Linear.predict(float(X),dat)
         
-        return render_template('linear.html', result = C)
+        return render_template('linearAlt.html', result = C)
 
     else:
-        return render_template('linear.html')
+        return render_template('linearAlt.html')
     
 
 ##Multiple Regression
@@ -53,17 +53,17 @@ def multi_reg_():
         
         C = multi.predict(user_input,dat)
 
-        return render_template('multi.html',  result = C)
+        return render_template('multiAlt.html',  result = C)
         
     else:
-        return render_template('multi.html')
+        return render_template('multiAlt.html')
 
 
 ##Decision Tree
 @app.route('/decTree', methods = ['GET','POST'])
 def decision():
     if request.method == 'POST':
-        file_name = request.files['file']
+        file_name = request.files['Files']
         file_path = './static/' + file_name.filename
         file_name.save(file_path)
 
@@ -73,10 +73,10 @@ def decision():
 
         C = dtree.dec_predict(user_input,dat)
 
-        return render_template('DecisionTree.html', result = C)
+        return render_template('decisionTreeAlt.html', result = C)
 
     else:
-        return render_template('DecisionTree.html')
+        return render_template('decisionTreeAlt.html')
 
 
 #Random Forest
@@ -84,7 +84,7 @@ def decision():
 def rforest():
     if request.method == 'POST':
 
-        file_name = request.files['file']
+        file_name = request.files['Files']
         file_path = './static/' + file_name.filename
         file_name.save(file_path)
 

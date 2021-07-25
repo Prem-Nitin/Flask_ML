@@ -1,0 +1,51 @@
+body{
+    background-color: rgb(125, 171, 214);
+
+}
+.container{
+    border: solid 30px rgb(125, 171, 214);
+    background-color: azure;
+    height: 90vh;
+
+}
+input{
+    font-family: 'Courier New', Courier, monospace;
+    padding-top:15px ;
+    /* width: 60px;  */
+    height:100px;
+    text-align: center;
+    color: rgb(125, 171, 214);
+    font-size: large;
+    /* background-color: black; */
+} 
+
+
+.align{
+    background-color: rgb(230, 252, 252);
+    height: 10px;
+    width: 60px;
+    margin-right:  20px;
+    margin-left: 10px;
+    border-radius: 10px;
+    border:solid 1px rgb(125, 171, 214);
+
+}
+label{
+    font-size: large;
+}
+
+button{
+    background-color: rgb(125, 171, 214);
+    border: solid 1px rgb(125, 171, 214);
+    height: 45px;
+    width: 130px;
+    font-size: large;
+    margin-top: 110px;
+    border-radius: 10px;
+    text-align: center;
+    margin-left: 45%;
+}
+.button-wrap{
+    text-align: center;
+}
+
