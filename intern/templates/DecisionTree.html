@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+
+{%block content%}Decision Tree{%endblock%}
+
+{%block body%} 
+
+<form class = "form" action = '#' method = 'POST' enctype="multipart/form-data">
+
+<input type="file" name = 'file'>
+<br>
+
+<label for = '' >Fixed Acidity </label>
+<input type = 'text' name = 'x1'>
+
+<label for = '' >Volatile </label>
+<input type = 'text' name = 'x2'>
+
+<label for = '' >Citric Acid</label>
+<input type = 'text' name = 'x3'>
+
+<label for = '' >Residual Sugar</label>
+<input type = 'text' name = 'x4'>
+
+<label for = '' >Chlorides</label>
+<input type = 'text' name = 'x5'>
+
+<label for = '' >Free Sulphur dioxide</label>
+<input type = 'text' name = 'x6'>
+
+<label for = '' >Total Sulphur dioxide </label>
+<input type = 'text' name = 'x7'>
+
+<label for = '' >Density</label>
+<input type = 'text' name = 'x8'>
+
+<label for = '' >pH</label>
+<input type = 'text' name = 'x9'>
+
+<label for = '' >Sulphates</label>
+<input type = 'text' name = 'x10'>
+
+<label for = '' >Alcohol </label>
+<input type = 'text' name = 'x11'>
+
+<button type="submit" value="predict">Predict</button>
+
+<h1>Prediction = {{result}}</h1>
+</form>
+
+{%endblock%}

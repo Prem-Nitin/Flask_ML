@@ -15,15 +15,20 @@
         <form class = 'Form' action = '#' method = 'POST' enctype="multipart/form-data">
             
 
-            <div class="button-wrap">
+            
                 <input type = 'text' name = 'X'>
                 
-                <span class = "filewrap">
+                
                 <input class = 'choose' type="file" name ='Files' >
-                </span>
-              <div>
-            <button class = 'button'> Predict</button>
+                
+             
 
+            <a href = reg> <button class = 'button'> Predict</button> </a>
+
+            <h2 style="color: azure;">Salary : {{result}}</h2>
+            
+            </form>
+            
 
 
 {%endblock%}
